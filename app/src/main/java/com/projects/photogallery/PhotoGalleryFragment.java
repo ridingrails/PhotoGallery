@@ -107,7 +107,6 @@ public class PhotoGalleryFragment extends Fragment {
 
             ImageView imageView = (ImageView)convertView
                     .findViewById(R.id.gallery_item_imageView);
-
             GalleryItem item = getItem(position);
             mThumbnailThread.queueThumbnail(imageView, item.getUrl());
 
