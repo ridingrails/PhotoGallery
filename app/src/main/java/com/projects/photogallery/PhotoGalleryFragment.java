@@ -104,7 +104,6 @@ public class PhotoGalleryFragment extends Fragment {
                 convertView = getActivity().getLayoutInflater()
                         .inflate(R.layout.gallery_item, parent, false);
             }
-
             ImageView imageView = (ImageView)convertView
                     .findViewById(R.id.gallery_item_imageView);
             GalleryItem item = getItem(position);
