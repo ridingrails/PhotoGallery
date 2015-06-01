@@ -9,6 +9,20 @@ public class GalleryItem {
     private String mId;
     private String mUrl;
 
+    public String getOwner() {
+        return mOwner;
+    }
+
+    public void setOwner(String owner) {
+        mOwner = owner;
+    }
+
+    public String getPhotoPageUrl() {
+        return "https://www.flickr.com/photos/" + mOwner + "/" + mId;
+    }
+
+    private String mOwner;
+
     public String getCaption() {
         return mCaption;
     }
